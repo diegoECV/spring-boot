@@ -1,12 +1,12 @@
 server:
-  port: ${PORT:2025}  # Valor por defecto si PORT no está configurado
-  url: ${SERVER_URL:http://localhost:2025}  # Valor por defecto si SERVER_URL no está configurado
+  port: ${PORT:8080}  # Valor por defecto si PORT no está configurado
+  url: ${SERVER_URL:http://localhost:8080}  # Valor por defecto si SERVER_URL no está configurado
 
 spring:
   datasource:
-    url: jdbc:sqlserver://127.0.0.1:1433;databaseName=DB_PROYECTO;encrypt=false;trustServerCertificate=true;integratedSecurity=false;  ## Cambiar "model" por tu base de datos
+    url: jdbc:sqlserver://3.239.112.251:1433;databaseName=VentasDB;encrypt=false;trustServerCertificate=true;integratedSecurity=false;  ## Cambiar "model" por tu base de datos
     username: sa          ## Cambiar por tu usuario
-    password: Admin12345  ## Cambiar por tu contraseña
+    password: Diego141608!Sup3rSegura2026#  ## Cambiar por tu contraseña
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
     hikari:
       maximum-pool-size: 5
