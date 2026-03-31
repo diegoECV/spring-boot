@@ -1,15 +1,14 @@
 package pe.edu.vallegrande.mybackend.model;
 
-import lombok.Data;
+import java.time.LocalDateTime;
+
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-
-import java.time.LocalDateTime;
-
-import jakarta.persistence.Column;
 import jakarta.persistence.Table;
+import lombok.Data;
 
 @Entity
 @Data                      // ✅ genera los getters y setters
@@ -35,6 +34,12 @@ public class Customer {
 
     @Column(name = "state")       // 🗄️ nombre del campo en la base de datos
     private String state;         // ☕️ nombre del atributo en la clase java
+
+    @Column(name = "email")       // 🗄️ nombre del campo en la base de datos
+    private String email;         // ☕️ nombre del atributo en la clase java
+
+    @Column(name = "rol")         // 🗄️ nombre del campo en la base de datos
+    private String rol;           // ☕️ nombre del atributo en la clase java
 
     //CAMPOS DE AUDITORIA
 
